@@ -64,7 +64,7 @@
 
         /* Hero / Introduction Section */
         .hero {
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('image.jpeg') no-repeat center center/cover;
             color: #fff;
             height: 60vh;
             display: flex;
@@ -125,6 +125,23 @@
             background-color: #fff;
             flex-shrink: 0;
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Video Feature Section */
+        .video-container {
+            width: 100%;
+            background-color: #1a1a1a;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-top: 1.5rem;
+        }
+
+        .video-container video {
+            width: 100%;
+            max-height: 500px;
+            border-radius: 4px;
+            background-color: #000;
         }
 
         /* Projects Grid */
@@ -189,15 +206,6 @@
             text-decoration: underline;
         }
 
-        /* Footer */
-        footer {
-            background-color: #1a1a1a;
-            color: #fff;
-            text-align: center;
-            padding: 1.5rem;
-            margin-top: 4rem;
-        }
-
         /* Responsive Design */
         @media (max-width: 768px) {
             nav {
@@ -226,6 +234,7 @@
             <div class="logo">BOGTAG OFFICIAL</div>
             <ul>
                 <li><a href="#about">About</a></li>
+                <li><a href="#featured-media">Media</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -239,99 +248,99 @@
 
     <div class="container">
 
-        <!-- About Section -->
         <section id="about">
             <h2>About Me</h2>
             <div class="about-content">
                 <div class="about-text">
                     <p>Hello! Welcome to my GitHub-hosted website. I love creating, exploring new branding identities, and building highly functional systems. This page serves as a central hub for my ongoing designs, technical data visualization experiments, and creative concepts.</p>
                 </div>
-                <!-- Profile/Main Logo Image Integration -->
-                <img src="image.png" alt="BOGTAG Official Identity Logo" class="about-image">
+                <img src="image.png" alt="BOGTAG Identity Logo" class="about-image">
             </div>
         </section>
 
-        <!-- Featured Projects Section -->
+        <section id="featured-media">
+            <h2>Featured Audio/Video Showcase</h2>
+            <p>Listen and watch my latest media project releases directly below:</p>
+            <div class="video-container">
+                <video controls>
+                    <source src="kawempe_riddim-Bogtag.mov" type="video/quicktime">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
         <section id="projects">
             <h2>Featured Projects</h2>
             <div class="projects-grid">
                 
-                <!-- Card 1 -->
                 <div class="project-card">
-                    <img src="image_2.png" alt="BOGTAG Badge Emblem Design">
+                    <img src="image (1).png" alt="Project Card Visual Assets">
                     <div class="project-info">
-                        <h3>Shield & Badge Concept</h3>
-                        <p>An outdoor-inspired badge logo iteration combining natural elements with bold typography.</p>
+                        <h3>Project System Alpha</h3>
+                        <p>An outdoor-inspired layout combining brand assets with bold typography and core layout systems.</p>
                         <a href="#" class="project-link">View Design →</a>
                     </div>
                 </div>
 
-                <!-- Card 2 -->
                 <div class="project-card">
-                    <img src="image_3.png" alt="BOGTAG Kraft Tag Minimalist Design">
+                    <img src="image (2).png" alt="Branding Concept Showcase">
                     <div class="project-info">
-                        <h3>Minimalist Tag Branding</h3>
-                        <p>Eco-friendly product tag concept featuring clean vector geometry and organic textures.</p>
+                        <h3>Minimalist Tag Showcase</h3>
+                        <p>Branded component featuring clean vector lines and organic layout textures.</p>
                         <a href="#" class="project-link">View Design →</a>
                     </div>
                 </div>
 
-                <!-- Card 3 -->
                 <div class="project-card">
-                    <img src="image_4.png" alt="Data Analytics Interface Mobile Mockup">
+                    <img src="image (3).png" alt="Data Interface Metrics Dashboard">
                     <div class="project-info">
-                        <h3>FinTech Market Analytics</h3>
-                        <p>A mobile user interface prototype charting real-time currency fluctuations and trading metrics.</p>
+                        <h3>Market Data Analytics</h3>
+                        <p>A mobile analytics component blueprint tracking real-time fluctuations and data models.</p>
                         <a href="#" class="project-link">View Interface →</a>
                     </div>
                 </div>
 
-                <!-- Card 4 -->
                 <div class="project-card">
-                    <img src="image_5.png" alt="BOGTAG Monogram Logo Grid Layout">
+                    <img src="image (4).png" alt="Line Blueprint System Grid">
                     <div class="project-info">
-                        <h3>Monogram & Line Art System</h3>
-                        <p>An intricate monogram logo layout utilizing interconnected line styling on fine textures.</p>
+                        <h3>Monogram & Line Systems</h3>
+                        <p>An intricate monogram geometric concept utilizing interconnected modern line matrices.</p>
                         <a href="#" class="project-link">View Blueprint →</a>
                     </div>
                 </div>
 
-                <!-- Card 5 -->
                 <div class="project-card">
-                    <img src="image_6.png" alt="BOGTAG Box Frame Label Concept">
+                    <img src="image (5).png" alt="Bounding Frame Visual Geometry">
                     <div class="project-info">
-                        <h3>Framed Apparel Labels</h3>
-                        <p>An alternative apparel labelling layout pairing abstract line icons inside clean architectural bounding frames.</p>
+                        <h3>Framed Bounding Design</h3>
+                        <p>An experimental presentation layout pairing vector icons with custom layout boxes.</p>
                         <a href="#" class="project-link">View Design →</a>
                     </div>
                 </div>
 
-                <!-- Card 6 -->
                 <div class="project-card">
-                    <img src="image_7.png" alt="BOGTAG Mountain Badge Vector Design">
+                    <img src="image.jpeg" alt="Rustic Circular Design Aspect">
                     <div class="project-info">
-                        <h3>Adventure Line Circular Badge</h3>
-                        <p>High-contrast woodcut style circular emblem exploring rustic mountain range aesthetics.</p>
+                        <h3>Rustic Badge Concept</h3>
+                        <p>High-contrast woodcut aesthetic element exploring classic line assets.</p>
                         <a href="#" class="project-link">View Asset →</a>
                     </div>
                 </div>
 
-                <!-- Card 7 -->
                 <div class="project-card">
-                    <img src="image_8.png" alt="Laboratory Solutions Chemical Research">
+                    <img src="image.HEIC" alt="Lab Control and Synthesis Process">
                     <div class="project-info">
-                        <h3>Chemical Synthesis & Lab Controls</h3>
-                        <p>An inside look into experimental chemical testing setups, flask measures, and formulation processes.</p>
+                        <h3>Laboratory Synthesis Systems</h3>
+                        <p>An examination into specialized laboratory processing, measurement systems, and engineering controls.</p>
                         <a href="#" class="project-link">View Research →</a>
                     </div>
                 </div>
 
-                <!-- Card 8 -->
                 <div class="project-card">
-                    <img src="image_9.png" alt="BOGTAG Texture Mockup Fabric Print">
+                    <img src="image (6).png" alt="Screenprint Mockup Texture Base">
                     <div class="project-info">
-                        <h3>Premium Screenprint Mockups</h3>
-                        <p>Visual presentation highlighting how brand elements translate to textured fabric and apparel weaves.</p>
+                        <h3>Premium Textural Integration</h3>
+                        <p>Visual testing displaying how creative elements print cleanly across textured fabrics and substrates.</p>
                         <a href="#" class="project-link">View Showcase →</a>
                     </div>
                 </div>
@@ -339,7 +348,6 @@
             </div>
         </section>
 
-        <!-- Contact Section -->
         <section id="contact">
             <h2>Get In Touch</h2>
             <p>If you'd like to collaborate or just want to say hi, feel free to reach out via email or check out my main GitHub profile.</p>
